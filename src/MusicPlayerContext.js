@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 
 import Rain from './assets/Rain.mp3';
 import 가세요 from './assets/가세요.m4a';
+import 보라빛향기 from './assets/보라빛 향기.m4a';
+import Dream from './assets/Dream.mp3';
+import YouAreMyLady from './assets/You Are My Lady.m4a';
 //import Summer from './bensound-summer.mp3';
 import LostChameleon from "./assets/LostChameleon.mp3";
 import Rock from './assets/TheHipsta.mp3';
@@ -31,6 +34,18 @@ const MusicPlayerProvider = (props) => {
       {
         name: '가세요',
         file: 가세요,
+      },
+      {
+        name: '보라빛 향기 - 강수지',
+        file: 보라빛향기,
+      },
+      {
+        name: 'Dream',
+        file: Dream,
+      },
+      {
+        name: 'You Are My Lady - 김건모',
+        file: YouAreMyLady,
       },
     ],
     currentTrackIndex: null,
