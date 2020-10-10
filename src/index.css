@@ -20,13 +20,23 @@ code {
   }
 }
 
-.box {
-  display: flex !important;
-  align-items: center;
-}
-
 .song-title {
   margin-left: 20px;
+}
+
+.controlsContainer {
+  display: flex !important;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.mySlider {
+  writing-mode: bt-lr; /* IE */
+  -webkit-appearance: slider-vertical; /* WebKit */
+  width: 8px;
+  height: 100px;
+  margin-left: 0px;
 }
 
 .controls {
@@ -41,6 +51,7 @@ code {
 }
 
 .current-track {
+  margin-top: 10px;
   width: 80%;
 }
 
@@ -50,6 +61,7 @@ code {
   max-height: 300px;
   overflow-y: auto;
 }
+
 .myprogress {
   display: flex !important;
   flex-direction: row;

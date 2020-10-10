@@ -32,7 +32,7 @@ const MusicPlayerProvider = (props) => {
         file: Rain,
       },
       {
-        name: '가세요',
+        name: '가세요 - 고한우',
         file: 가세요,
       },
       {
@@ -40,7 +40,7 @@ const MusicPlayerProvider = (props) => {
         file: 보라빛향기,
       },
       {
-        name: 'Dream',
+        name: 'Dream - 길학미',
         file: Dream,
       },
       {
@@ -48,12 +48,17 @@ const MusicPlayerProvider = (props) => {
         file: YouAreMyLady,
       },
     ],
+    audioPlayer: null,
     currentTrackIndex: null,
     isPlaying: false,
-    elapsed: 0,
-    total: 0,
-    position: 0,
-    duration: 0
+    isPaused: false,
+    isEnded: false,
+    elapsed: 0,               //  curr elapsed time 00:00
+    total: 0,                 // total playing time 00:00
+    position: 0,              // current range bar [0:1]
+    duration: 0,              // track duration in seconds
+    volume: 50,               // current volume [1:100]
+    debug: true,             // turns on colsole.log
   });
   return (
     <MusicPlayerContext.Provider value={[state, setState]}>
